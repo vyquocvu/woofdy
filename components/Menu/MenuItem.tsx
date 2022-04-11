@@ -1,11 +1,10 @@
-
-import { FC } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { FC } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import { Text, useTheme } from "@nextui-org/react";
 
-import styles from './MenuItem.module.css';
+import styles from "./MenuItem.module.css";
 
 interface MenuItemProps {
   icon: string;
@@ -13,8 +12,7 @@ interface MenuItemProps {
   title: string;
 }
 
-const MenuItem: FC<MenuItemProps> = ({ title, icon, path}) => {
-
+const MenuItem: FC<MenuItemProps> = ({ title, icon, path }) => {
   const { theme } = useTheme();
   return (
     <div className={styles.item}>
@@ -26,8 +24,8 @@ const MenuItem: FC<MenuItemProps> = ({ title, icon, path}) => {
           </Text>
         </a>
       </Link>
-  </div>
-  )
-}
+    </div>
+  );
+};
 
 export default MenuItem;
