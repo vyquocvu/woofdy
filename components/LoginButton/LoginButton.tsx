@@ -1,6 +1,7 @@
 import { useWeb3React } from "@web3-react/core";
-import { injected } from "../wallet/Connectors";
 import { Button, Grid } from "@nextui-org/react";
+
+import { injected } from "../Wallet/Connectors";
 
 export default function LoginButton() {
   const { active, account, activate, deactivate } = useWeb3React();
