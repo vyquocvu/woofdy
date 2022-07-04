@@ -1,0 +1,12 @@
+.rightBar {
+  width: 100%;
+}
+.setting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.user {
+  margin-left: 12px;
+  flex: 1;
+}

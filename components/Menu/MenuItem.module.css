@@ -1,0 +1,7 @@
+.item {
+  height: 48px;
+}
+
+.item a {
+  display: flex;
+}
